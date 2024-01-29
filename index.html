@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Password generator app</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="generated-pass">
+        <span id="generatedPass" class="empty">P4$5W0rD!</span>
+        <img
+          class="copy-button"
+          src="./assets/images/icon-copy.svg"
+          alt="copy button"
+        />
+      </div>
+      <div class="main-box">
+        <form class="slider-box" action="">
+          <label for="slider">Character Length</label>
+          <span class="characters-num">0</span>
+          <input
+            type="range"
+            name="slider"
+            id="slider"
+            min="4"
+            max="18"
+            value="0"
+          />
+        </form>
+        <ul class="para-list">
+          <li>
+            <input type="checkbox" name="uppercase" id="uppercase" />
+            <label for="uppercase">Include Uppercase Letters</label>
+          </li>
+          <li>
+            <input type="checkbox" name="lowercase" id="lowercase" />
+            <label for="lowercase">Include Lowercase Letters</label>
+          </li>
+          <li>
+            <input type="checkbox" name="numbers" id="numbers" />
+            <label for="numbers">Include Numbers</label>
+          </li>
+          <li>
+            <input type="checkbox" name="symbols" id="symbols" />
+            <label for="symbols">Include Symbols</label>
+          </li>
+        </ul>
+        <div class="levels">
+          <h3>STRENGTH</h3>
+          <div class="levels-visual">
+            <h4></h4>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <button id="btn">GENERATE</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
